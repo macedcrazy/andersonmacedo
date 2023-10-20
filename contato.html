@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #646363;
+  }
+  
+
+/*barra de Navegação*/
+
+ul.topo {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  ul.topo li {
+    float: left;
+    border-right:1px solid #f52c2c;
+  }
+  
+  ul.topo li:last-child {
+    border-right: none;
+  }
+  
+  ul.topo li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.topo li a:hover:not(.active) {
+    background-color: #58b1e1;
+  }
+  
+  .active {
+    background-color: #525ec3;
+  }
+
+  /*estilo do Cabeçalho*/
+
+  .header {
+    background-color:  #525ec3;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+  }
+
+  /* Estilo do corpo do Site*/
+
+  .column {
+    text-align: center;
+    font-size: 1.2em;   
+    margin-top: 2em;
+    color: whitesmoke;
+    
+  }
+
+  .imagem{
+    display: block;
+    margin: 5px auto;
+    max-width: 100%;
+    width: 15%;
+    border-radius: 1em ;
+  }
+
+  .formacao{
+    color: whitesmoke;
+  }
+
+  h1{
+    text-align: center;
+    font-size: 16px;
+    color: whitesmoke;
+  }
+
+input[type=text], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;   
+    background-color: whitesmoke; 
+  }
+
+  textarea {
+    width: 100%;
+    height: 180px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    font-size: 16px;
+    resize: none;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #525ec3;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color:  #58b1e1;
+  }
+  
+  div {
+    border-radius: 5px;
+    background-color: #646363;
+    padding: 20px;
+  }
+
+  
+@media screen and (max-width: 850px) {
+  .container {
+    display: grid;
+    margin: 40px auto;
+    grid-template-columns: 2fr;
+  }
+}
+
+ 
+  /*Layout Responsivo */
+@media screen and (max-width: 600px) {
+    .header{
+      width: 100%;
+    }
+  
+    ul.topo li{
+        float: none;
+    } 
+    
+    .imagem{
+      margin: 0 auto 1rem auto;
+      width: 50%;
+
+    }
+    .column{
+      text-align: center;
+      margin: 1rem auto;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    
+  }
+    </style>
+</head>
+<body>
+    <ul class="topo">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="sobremim.html">Sobre mim</a></li>
+        <li><a href="Formação.html">Formação</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul><br>
+
+    <div class="container">
+        <h1>Contato</h1>
+        <form action="" method="post">
+          <label for="nome">Nome: </label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+      
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Digite seu Email">
+      
+          <label for="Mensagem">Mensagem</label>
+          <textarea name="Mensagem" placeholder="digite sua mensagem" id="Mensagem" cols="30" rows="10"></textarea><br><br>
+         
+        
+          <input type="submit" value="Enviar" id="button">
+        </form>
+      </div>      
+        
+</body>
+</html>

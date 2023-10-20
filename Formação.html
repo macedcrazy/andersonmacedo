@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação</title>
+    <style>
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #646363;
+  }
+  
+
+/*barra de Navegação*/
+
+ul.topo {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  ul.topo li {
+    float: left;
+    border-right:1px solid #f52c2c;
+  }
+  
+  ul.topo li:last-child {
+    border-right: none;
+  }
+  
+  ul.topo li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.topo li a:hover:not(.active) {
+    background-color: #58b1e1;
+  }
+  
+  .active {
+    background-color: #525ec3;
+  }
+
+  /*estilo do Cabeçalho*/
+
+  .header {
+    background-color:  #525ec3;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+  }
+
+  /* Estilo do corpo do Site*/
+
+  .column {
+    text-align: center;
+    font-size: 1.2em;   
+    margin-top: 2em;
+    color: whitesmoke;
+    
+  }
+
+  .imagem{
+    display: block;
+    margin: 5px auto;
+    max-width: 100%;
+    width: 15%;
+    border-radius: 1em ;
+  }
+
+  .formacao{
+    color: whitesmoke;
+  }
+
+ 
+  /*Layout Responsivo */
+@media screen and (max-width: 600px) {
+    .header{
+      width: 100%;
+    }
+  
+    ul.topo li{
+        float: none;
+    } 
+    
+    .imagem{
+      margin: 0 auto 1rem auto;
+      width: 50%;
+
+    }
+    .column{
+      text-align: center;
+      margin: 1rem auto;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    
+  }
+    </style>
+</head>
+<body>
+
+    <ul class="topo">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="sobremim.html">Sobre mim</a></li>
+        <li><a href="Formação.html">Formação</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+
+     <div class="formacao">
+
+      <h1 style="margin-top: 3rem;">Formação</h1><br>
+      <ul>
+        <li>Cursando Analise e Deenvolvimento de Sistemas (Uninter)</li><br>
+        <li>Tecnologo em Comércio Exterior (Uninter) - Ano de Conclusão : 2017</li><br>    
+        <li>Ensino Médio Completo</li><br>
+        <li>Inglês - Avançado</li><br> 
+        <li>Espanhol - Intermediario</li><br> 
+      </ul><br><br>
+     
+     </div>
+    
+</body>
+</html>
